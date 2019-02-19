@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="532.0" maxWidth="564.0" minHeight="532.0" minWidth="564.0" prefHeight="513.0" prefWidth="602.0" style="-fx-background-color: #0d1319;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ListarTxtController">
+   <children>
+      <Label layoutX="9.0" layoutY="9.0" prefHeight="99.0" prefWidth="546.0" text="Substitua o arquivo de texto (caso queira testar sua entrada) na pasta principal do projeto: &quot;LocadoraDeCarros&quot;, usando o nome do arquivo como : &quot;entrada.txt&quot;. Apos ter feito isso clique em confirmar" textAlignment="CENTER" textFill="#f1f1f1" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font></Label>
+      <Button fx:id="btnConfirmar" layoutX="187.0" layoutY="119.0" mnemonicParsing="false" onAction="#confirmaCaminho" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #7f7979;" text="Confirmar" textFill="#f1f1f1" />
+      <ListView fx:id="listSaidaTxt" layoutX="28.0" layoutY="185.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="331.0" prefWidth="510.0" style="-fx-background-color: #0d1319;" />
+   </children>
+</AnchorPane>

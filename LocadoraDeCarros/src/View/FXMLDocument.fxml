@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="532.0" minWidth="564.0" prefHeight="532.0" prefWidth="564.0" style="-fx-background-color: #0d1319;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FXMLDocumentController">
+   <children>
+      <Label fx:id="lblTipoCliente" layoutX="44.0" layoutY="188.0" text="Tipo de Cliente: " textFill="#f1f1f1" />
+      <Label layoutX="44.0" layoutY="220.0" text="Numero de Passageiros: " textFill="#f1f1f1" />
+      <Label layoutX="44.0" layoutY="251.0" text="Datas: " textFill="#f1f1f1" />
+      <Label layoutX="44.0" layoutY="284.0" text="Dia da Semana: " textFill="#f1f1f1" />
+      <TextField fx:id="txtQtdPassageiros" layoutX="204.0" layoutY="215.0" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #f1f1f1;" />
+      <TextField fx:id="txtDatas" alignment="CENTER" layoutX="141.0" layoutY="246.0" prefHeight="25.0" prefWidth="137.0" promptText="Ex: 01Jan2019" style="-fx-background-color: #f1f1f1;" />
+      <Button fx:id="btnVerificar" layoutX="70.0" layoutY="329.0" mnemonicParsing="false" onAction="#clicouVerificar" prefHeight="53.0" prefWidth="190.0" style="-fx-background-color: #8f3faf;" text="Verificar" textFill="#f1f1f1">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <ComboBox fx:id="cbDiasDaSemana" layoutX="177.0" layoutY="279.0" prefHeight="25.0" prefWidth="98.0" style="-fx-background-color: #f1f1f1;" />
+      <Button fx:id="btnSelecionaDias" layoutX="293.0" layoutY="279.0" mnemonicParsing="false" onAction="#pegaDias" style="-fx-background-color: #7f7979;" text="Selecionar Datas" textFill="#f1f1f1" />
+      <ComboBox fx:id="cbTipoCliente" layoutX="165.0" layoutY="183.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #f1f1f1;" />
+      <Label fx:id="lblMensagem" alignment="CENTER" layoutX="92.0" layoutY="409.0" prefHeight="83.0" prefWidth="402.0" textAlignment="CENTER" textFill="#f1f1f1">
+         <font>
+            <Font name="DejaVu Sans Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="130.0" fitWidth="129.0" layoutX="78.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagens/pb02-01.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="220.0" layoutY="14.0" prefHeight="157.0" prefWidth="228.0" text="CARS" textAlignment="CENTER" textFill="#f1f1f1">
+         <font>
+            <Font name="Dyuthi" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnArqText" layoutX="308.0" layoutY="337.0" mnemonicParsing="false" onAction="#entrarComArqText" prefHeight="38.0" prefWidth="228.0" text="Entrada com Arquivo de texto" />
+   </children>
+</AnchorPane>
